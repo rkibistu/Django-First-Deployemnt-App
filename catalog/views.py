@@ -27,7 +27,7 @@ def index(request):
     num_authors = Author.objects.count()
 
     #gen_id = Genre.objects.get(name="Stiinta")
-    gen_id = 10
+    gen_id = 1
     num_books_filter = Book.objects.filter(genre=gen_id).count()
 
 
