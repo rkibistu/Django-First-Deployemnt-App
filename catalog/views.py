@@ -26,7 +26,8 @@ def index(request):
     # The 'all()' is implied by default.
     num_authors = Author.objects.count()
 
-    gen_id = Genre.objects.get(name="Stiinta")
+    #gen_id = Genre.objects.get(name="Stiinta")
+    gen_id = 10
     num_books_filter = Book.objects.filter(genre=gen_id).count()
 
 
